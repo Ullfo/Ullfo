@@ -45,11 +45,11 @@ a {
     color: white;
 }
 /*-------header--------*/
-header {
+.general-header {
     display:  flex;
     align-items:  center;
     justify-content: space-between;
-    height: 60px;
+    height: 56px;
     background: #AB274F;
     padding: 0 25px;
 }
@@ -62,12 +62,11 @@ header {
 }
 /*------background------*/
 main {
-    height: calc(100vh - 102px);
+    height: calc(100vh - 96px);
     width: 100%;   
-    background: #212536;
-    margin-top: 102px;
+    background: #292e42;
+    margin-top: 96px;
     overflow: auto;
-    padding: 10px;
     box-sizing: border-box;
 }
 /*-------sidebar-------*/
@@ -75,19 +74,20 @@ nav {
     display: flex;
     align-items:  center;
     width: 100%;
-    height: 42px;
-    background:#1b1e2c;
+    height: 40px;
+    background: #1b1e2c;
+    font-size: 16px;
 }
 .sidebar-menu li {
     font-family: 'Roboto', sans-serif;
     float: left;
     list-style: none;
 }
-li a {
+.sidebar-menu a {
     display: block;
-    height: 42px;
+    height: 40px;
     padding: 0 15px;
-    line-height: 42px;
+    line-height: 40px;
     color: #bdc1c5;
 }
 .sidebar-menu a:hover {
@@ -98,24 +98,24 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
+    height: 37px;
     border-radius: 40px;
-    background: #bdc1c5;
+    background: white;
+    
 }
 .search-txt {
     border: none;
     background: none;
     outline: none;
     color: #212536;
-    padding: 11px;
+    padding: 15px;
     font-size: 15px;
 }
 .search-item {
-    border-radius: 50%;
+    border-radius: 40px;
     background: #212536;
-    height: 35px;
-    width: 35px;
-    padding: 1px;
+    height: 37px;
+    width: 37px;
 }
 .entrance {
     display: flex;
@@ -138,29 +138,131 @@ li a {
     top: 0;
 }
 .entrance:hover {
-    background: red;
+    background: #1b1e2c;
 }
-.cards {
+.cards { 
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
 }
 .card {
-    width: 150px;
-    height: 200px;
+    width: 135px;
+    height: 190px;
     background: white;
     margin: 10px;
     transition: width .4s;
+    color: white;
 }
 .card:hover {
-   width: 300px;
+    background: #ccc;
+    transition: 0.3s;
+    width: 140px;
 }
-
-
-
-
-
-
-
+/*-----Вход-----*/
+.block1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 690px;
+}
+.recone {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    background: #212536;
+}
+.adc {
+    width: 300px;
+    height: 35px;
+    font-size: 15px;
+    background: #bdc1c5;
+    border-radius:3px;
+    padding-left: 15px;
+    border: 1px; 
+    margin-bottom: 30px;
+    outline: none;
+}
+.newpassword {
+  
+}
+.teg {
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+.entrances {
+    width: 300px;
+    height: 40px;
+    background: #AB274F; 
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+}   
+.regester {
+    padding: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #212536;
+    width: 100%;
+    height: 220px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 15 15px;
+}
+.foter-bottom {
+    width: 100%;
+    height: 50px;
+    background: #1b1e2c;
+}
+.foter-1 {
+    margin-right: auto;
+    margin-left: auto;  
+}
+.foter-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+h1 {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+ul li{
+    margin-top: 15px;
+}
+h2 {
+    color: white;
+    padding-left: 30px;
+}
+.txt-cards {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+.widget-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: white;
+     padding-left: 30px;
+}
+.content-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+}
 
 
 
